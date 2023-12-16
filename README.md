@@ -16,4 +16,4 @@ If there is any question, please feel free to contact me (jiagengwu@zju.edu.cn)
 
 An online calculator that can effectively estimate the necessity of tracheostomy for adult burn patients by inputting several clinical factors. The system has been validated by large-scale cross-temporal and cross-institutional studies in two top-tier hospitals in China.
 
-The Online calculator: https://ylab.top/softwares/tracheostomy
+The Online calculator: http://jgwu.top/tracheostomy/
