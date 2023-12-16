@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Prediction of tracheostomy for adult bruns</title>
+    <link rel="stylesheet" href="./tracheostomy_prediction_files/index.css">
+    <style>
+        .tabWrap>.tabs>.tab  {
+            pointer-events: none;
+        }
+        .tabWrap>.tabs>.tab.active::after  {
+            background-color: transparent!important;
+        }
+        p.big {line-height: 200%; }
+    </style>
+<input type="hidden" id="_w_melon" data-inspect-config="3"><script type="text/javascript" src="chrome-extension://dbjbempljhcmhlfpfacalomonjpalpko/scripts/inspector.js"></script></head>
+<body data-feedly-mini="yes">
+<!-- 整体区域 -->
+<div class="wrapBg">
+    <!-- 白底内容区 -->
+    <div class="content">
+        <!-- 标题类 -->
+        <div class="header">
+            <div class="title1">
+                <div><b>Prediction of tracheostomy for burn patients</b></div>
+            </div>
+        </div>
+        <!-- 列表部分 -->
+        <div class="listWrap">
+            <div class="header"><b>Input variables</b></div>
+            <br>
+            <div class="describe">The current status of burn patients</div>
+            <div class="tabWrap">
+                <div class="tabs">
+                    <div class="tab"></div>
+                    <div class="tab"></div>
+                    <div class="tab active"></div>
+                </div>
+                <div class="listContent">
+                    <form class="form active" method="post">
+                        <ol>
+                            <li>
+                                <div class="text" ><b>1. Age</b></div>
+                                <label class="radio_label">
+                                    <input name="Age" type="radio" value="0" id="Age_0" checked> 18≤Age≤29 &nbsp;&nbsp;
+                                </label>
+                                <label class="radio_label">
+                                    <input name="Age" type="radio" value="1" id="Age_1"> 30≤Age≤39 &nbsp;&nbsp;
+                                </label>
+                                <label class="radio_label">
+                                    <input name="Age" type="radio" value="2" id="Age_2"> 40≤Age≤49 &nbsp;&nbsp;
+                                </label>
+                                <label class="radio_label">
+                                    <input name="Age" type="radio" value="3" id="Age_3"> 50≤Age≤59 &nbsp;&nbsp;
+                                </label>
+                                <label class="radio_label">
+                                    <input name="Age" type="radio" value="4" id="Age_4"> 60≤Age≤69 &nbsp;&nbsp;
+                                </label>
+                                <label class="radio_label">
+                                    <input name="Age" type="radio" value="5" id="Age_5"> Age≥70
+                                </label>
+                            </li>
+                            <br>
+                            <li>
+                                <div class="text"><b>2. Days after burns</b></div>
+                                <label class="radio_label">
+                                    <input name="Day_after_burn" type="radio" value="0" id="Day_after_burn_0" checked> 0≤days<1 &nbsp;&nbsp;
+                                </label>
+                                <label class="radio_label">
+                                    <input name="Day_after_burn" type="radio" value="1" id="Day_after_burn_1"> 1≤days<2 &nbsp;&nbsp;
+                                </label>
+                                <label class="radio_label">
+                                    <input name="Day_after_burn" type="radio" value="2" id="Day_after_burn_2"> 2≤days<3 &nbsp;&nbsp;
+                                </label>
+                                <label class="radio_label">
+                                    <input name="Day_after_burn" type="radio" value="3" id="Day_after_burn_3"> 3≤days<7 &nbsp;&nbsp;
+                                </label>
+
+                            </li>
+                            <br>
+                            <li>
+                                <div class="text"><b>3. Disturbance of consciousness</b></div>
+                                <label class="radio_label">
+                                    <input name="Disturbance_of_consciousness" type="radio" value="1" id="Disturbance_of_consciousness_1"> Yes &nbsp;&nbsp;&nbsp;
+                                </label>
+                                <label class="radio_label">
+                                    <input name="Disturbance_of_consciousness" type="radio" value="0" id="Disturbance_of_consciousness_0" checked> No
+                                </label>
+                            </li>
+                            <p class="big">
+                                &nbsp;&nbsp;&nbsp;&nbsp;Existence: conscious disturbance due to burns, or mental disorders, or other diseases that may cause unconsciousness (Glasgow score<9)
+                            </p>
+                            <br>
+                            <li>
+                                <div class="text"><b>4. Body burn index</b></div>
+                                <input type="number" name="Burn_index" class="input" min="0" max="100"  data-errmsg="Range from 0 to 100 (0)" placeholder="Range 0-100" id="Burn_index" required>
+                            </li>
+                            <p class="big">
+                                &nbsp;&nbsp;&nbsp;&nbsp;Total body burn index = 1/2 superficial thickness burns + 1/2 deep partial-thickness burns + full-thickness burns 
+                            </p>
+                            <br>
+                            <li>
+                                <div class="text"><b>5. Local burn index (head/face/neck)</b></div>
+                                <input type="number" name="Local_Burn_index" class="input" min="0" max="9" data-errmsg="Range from 0 to 9" placeholder="Range 0-9"  id="Local_Burn_index" required>
+                            </li>
+                            <p class="big">
+                                &nbsp;&nbsp;&nbsp;&nbsp;Local burn index (head/face/neck) = 1/2 superficial thickness burns + 1/2 deep partial-thickness burns + full-thickness burns 
+                            </p>
+                            <br>
+                            <li>
+                                <div class="text"><b>6. Existence of inlahation injury</b></div>
+                                <label class="radio_label">
+                                    <input name="Inhalation_injury" type="radio" value="1" id="Inhalation_injury_1"> Yes &nbsp;&nbsp;&nbsp;
+                                </label>
+                                <label class="radio_label">
+                                    <input name="Inhalation_injury" type="radio" value="0" id="Inhalation_injury_0" checked> No
+                                </label>
+                            </li>
+                        </ol>
+                        <div class="line">
+                            <div class="text"><b>Necessity of tracheostomy is</b></div>
+                            <!-- <input id="Necessity_tracheostomy" type="text" disabled="" class="input"> -->
+                            <h3 class="col-sm-1" id="Necessity_tracheostomy"></h3>
+                        </div>
+                    </form>
+                </div>
+                <!-- 提交按钮 -->
+                <div class="submitWrap">
+                    <div class="submit" type="submit" onclick="return getForm()">Submit</div>
+                    <!-- <button type="submit" onclick="return getForm()">Submit</button> -->
+                </div>
+            </div>
+        </div>
+        <!-- <div class="conFooter">
+            昨日访问量：<span>0</span>&nbsp;&nbsp;总访问量：<span>666</span>
+        </div> -->
+    </div>
+</div>
+<script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+    function getForm() {
+        // var age = document.getElementsByName("Age").value;
+        var age = $("input[name='Age']:checked").val()
+        age = parseFloat(age)
+        console.log(age);
+
+        var dab = $("input[name='Day_after_burn']:checked").val()
+        dab = parseFloat(dab)
+        console.log(dab);
+
+        var doc = $("input[name='Disturbance_of_consciousness']:checked").val()
+        doc = parseFloat(doc)
+        console.log(doc);
+
+        var bi = document.getElementById("Burn_index").value;
+        bi = parseFloat(bi)
+        console.log(bi);
+
+        var lbi = document.getElementById("Local_Burn_index").value;
+        lbi = parseFloat(lbi)
+        console.log(lbi);
+
+        var ii = $("input[name='Inhalation_injury']:checked").val()
+        ii = parseFloat(ii)
+        console.log(ii);
+
+        var score = -7.04 + age*0.21276993 + dab*-1.22247628 + doc*3.39757884 + bi*0.08553529 + lbi*1.07864765 + ii*2.45548642
+        score = Math.exp(score) / (1+Math.exp(score))
+        score = score.toFixed(4)
+        document.getElementById("Necessity_tracheostomy").innerHTML = score
+        console.log(score)
+        return false
+    }
+
+</script>
+
+<div id="feedly-mini" title="feedly Mini tookit"></div></body></html>
