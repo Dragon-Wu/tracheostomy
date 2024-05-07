@@ -1,8 +1,12 @@
 # Tracheostomy-for-burn-patients
 
-This repository contains the code and resources for the paper: 《Deployable machine learning-based decision support system for tracheostomy in acute burn patients: a cross-institutional retrospective cohort study》
-Authors: Haisheng Li*, PhD, MD; Jiageng Wu*, MS; Ning Li, MM; Yumei Zhang, BM; Wei Luo, BM; Zhenzhen Zhang, MM; Shixu Lin, BM; Xingang Wang, PhD, MD; Chunmao Han, PhD, MD; Zhiqiang Yuan, PhD, MD; Gaoxing Luo\#,PhD, MD; Jie Yang\#, PhD
+This repository contains the code and resources for the paper: 
+**《Deployable machine learning-based decision support system for tracheostomy in acute burn patients: a cross-institutional retrospective cohort study》**
+
+**Authors:** Haisheng Li*, PhD, MD; Jiageng Wu*, MS; Ning Li, MM; Yumei Zhang, BM; Wei Luo, BM; Zhenzhen Zhang, MM; Shixu Lin, BM; Xingang Wang, PhD, MD; Chunmao Han, PhD, MD; Zhiqiang Yuan, PhD, MD; Gaoxing Luo\#,PhD, MD; Jie Yang\#, PhD
+
 *Contribute equally to this paper
+
 \# Correspondence: 
 
 ## Introduction
